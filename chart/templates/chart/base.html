@@ -1,0 +1,27 @@
+{% load static %}
+{% load bootstrap4 %}
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    {% bootstrap_css %}
+
+    <title>{% block title %}Gráfico{% endblock %}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+
+
+  </head>
+  <body>
+    {% block content %}
+
+    {% endblock %}
+
+    {% block scripts %}
+
+    {% endblock %}
+  </body>
+</html>
